@@ -1,121 +1,222 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<link rel="shortcut icon" href="https://heafib.github.io/favicon.ico?v=1618479781314">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="utf-8" >
+
+<title>Heafib</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://heafib.github.io/favicon.ico?v=1618541545062">
 <link rel="stylesheet" href="https://heafib.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://heafib.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="温故而知新" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="have a good dream">
+    
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://heafib.github.io">
-  <img class="avatar" src="https://heafib.github.io/images/avatar.png?v=1618479781314" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
+    <div id="app" class="main">
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://heafib.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://heafib.github.io">
+        <img src="https://heafib.github.io/images/avatar.png?v=1618541545062" class="site-logo">
+        <h1 class="site-title">Heafib</h1>
       </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://heafib.github.io/tag/PvHk5miLW/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://heafib.github.io/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://heafib.github.io/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-      </div>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://heafib.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
     </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      have a good dream
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/heafib" target="_blank">Heafib</a> | <a class="rss" href="https://heafib.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://heafib.github.io/post/k8s-01/">
+                  <h2 class="post-title">k8s集群部署（一）</h2>
+                </a>
+                <div class="post-date">
+                  2020-10-19
+                </div>
+                <div class="post-abstract">
+                  <h3 id="安装docker">安装docker</h3>
+<pre><code class="language-shell">#在多台主机上安装docker
+yum install -y vim
+yum install -y yum-utils
+yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce docker-ce-cli containerd.io
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl enable docker
+systemctl start docker
+</code></pre>
+<h3 id="安装rancher">安装rancher</h3>
+<pre><code class="language-shell">#在主机上安装rancher
+docker run -itd -p 7080:80 -p 7443:443 \
+    --restart=unless-stopped \
+    -e CATTLE_AGENT_IMAGE=&quot;registry.cn-hangzhou.aliyuncs.com/rancher/rancher-agent:v2.4.2&quot; \
+    registry.cn-hangzhou.aliyuncs.com/rancher/rancher:v2.4.2
+</code></pre>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://heafib.github.io/post/new-beginning/">
+                  <h2 class="post-title">新的开始</h2>
+                </a>
+                <div class="post-date">
+                  2020-09-08
+                </div>
+                <div class="post-abstract">
+                  <p>上个月18号，结束了自己毕业后的第一份工作，加起来大概有三年多的时间，今年年初放年假之后，因为疫情等种种原因，原公司迟迟不能开工，而且工资也迟迟不能发放，还需要自己花钱来交五险一金，好多同事都选择了离开，我是在6月初的时候恢复了工作，但是薪资减半，干了一个多月后，疫情加重了，不得已回家办公，某天突然接到了一个面试申请，第二天收拾收拾就过去了，以为像之前一样，就是走个过程，没想到这次就成了。</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://heafib.github.io/post/jjlin-sanctuary-2-0-hefei/">
+                  <h2 class="post-title">林俊杰2019圣所2.0世界巡回演唱会合肥站</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-15
+                </div>
+                <div class="post-abstract">
+                  <p>{% asset_img 微信图片_20200911103918.jpg 圣所2.0合肥 %}</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://heafib.github.io/post/jjlin-sanctuary-2-0-shenyang/">
+                  <h2 class="post-title">林俊杰2019圣所2.0世界巡回演唱会沈阳站</h2>
+                </a>
+                <div class="post-date">
+                  2019-05-11
+                </div>
+                <div class="post-abstract">
+                  <p>{% asset_img 微信图片_20200911102627.jpg 圣所2.0沈阳 %}</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://heafib.github.io/post/jjlin-sanctuary-dalian/">
+                  <h2 class="post-title">林俊杰2018圣所世界巡回演唱会大连站</h2>
+                </a>
+                <div class="post-date">
+                  2018-05-05
+                </div>
+                <div class="post-abstract">
+                  <p>{% asset_img 微信图片_20200911101734.jpg 圣所大连 %}</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
   </body>
 </html>

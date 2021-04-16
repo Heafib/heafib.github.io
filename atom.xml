@@ -1,45 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://heafib.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-04-15T09:43:04.011Z</updated>
+    <title>Heafib</title>
+    <updated>2021-04-16T02:52:49.262Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://heafib.github.io"/>
     <link rel="self" href="https://heafib.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>have a good dream</subtitle>
     <logo>https://heafib.github.io/images/avatar.png</logo>
     <icon>https://heafib.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, Heafib</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://heafib.github.io/post/hello-gridea/</id>
-        <link href="https://heafib.github.io/post/hello-gridea/">
+        <title type="html"><![CDATA[k8s集群部署（一）]]></title>
+        <id>https://heafib.github.io/post/k8s-01/</id>
+        <link href="https://heafib.github.io/post/k8s-01/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2020-10-19T01:43:29.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="安装docker">安装docker</h3>
+<pre><code class="language-shell">#在多台主机上安装docker
+yum install -y vim
+yum install -y yum-utils
+yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce docker-ce-cli containerd.io
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl enable docker
+systemctl start docker
+</code></pre>
+<h3 id="安装rancher">安装rancher</h3>
+<pre><code class="language-shell">#在主机上安装rancher
+docker run -itd -p 7080:80 -p 7443:443 \
+    --restart=unless-stopped \
+    -e CATTLE_AGENT_IMAGE=&quot;registry.cn-hangzhou.aliyuncs.com/rancher/rancher-agent:v2.4.2&quot; \
+    registry.cn-hangzhou.aliyuncs.com/rancher/rancher:v2.4.2
+</code></pre>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <content type="html"><![CDATA[<h3 id="安装docker">安装docker</h3>
+<pre><code class="language-shell">#在多台主机上安装docker
+yum install -y vim
+yum install -y yum-utils
+yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce docker-ce-cli containerd.io
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl enable docker
+systemctl start docker
+</code></pre>
+<h3 id="安装rancher">安装rancher</h3>
+<pre><code class="language-shell">#在主机上安装rancher
+docker run -itd -p 7080:80 -p 7443:443 \
+    --restart=unless-stopped \
+    -e CATTLE_AGENT_IMAGE=&quot;registry.cn-hangzhou.aliyuncs.com/rancher/rancher-agent:v2.4.2&quot; \
+    registry.cn-hangzhou.aliyuncs.com/rancher/rancher:v2.4.2
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新的开始]]></title>
+        <id>https://heafib.github.io/post/new-beginning/</id>
+        <link href="https://heafib.github.io/post/new-beginning/">
+        </link>
+        <updated>2020-09-08T09:55:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>上个月18号，结束了自己毕业后的第一份工作，加起来大概有三年多的时间，今年年初放年假之后，因为疫情等种种原因，原公司迟迟不能开工，而且工资也迟迟不能发放，还需要自己花钱来交五险一金，好多同事都选择了离开，我是在6月初的时候恢复了工作，但是薪资减半，干了一个多月后，疫情加重了，不得已回家办公，某天突然接到了一个面试申请，第二天收拾收拾就过去了，以为像之前一样，就是走个过程，没想到这次就成了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上个月18号，结束了自己毕业后的第一份工作，加起来大概有三年多的时间，今年年初放年假之后，因为疫情等种种原因，原公司迟迟不能开工，而且工资也迟迟不能发放，还需要自己花钱来交五险一金，好多同事都选择了离开，我是在6月初的时候恢复了工作，但是薪资减半，干了一个多月后，疫情加重了，不得已回家办公，某天突然接到了一个面试申请，第二天收拾收拾就过去了，以为像之前一样，就是走个过程，没想到这次就成了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[林俊杰2019圣所2.0世界巡回演唱会合肥站]]></title>
+        <id>https://heafib.github.io/post/jjlin-sanctuary-2-0-hefei/</id>
+        <link href="https://heafib.github.io/post/jjlin-sanctuary-2-0-hefei/">
+        </link>
+        <updated>2019-06-15T15:59:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>{% asset_img 微信图片_20200911103918.jpg 圣所2.0合肥 %}</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>{% asset_img 微信图片_20200911103918.jpg 圣所2.0合肥 %}</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[林俊杰2019圣所2.0世界巡回演唱会沈阳站]]></title>
+        <id>https://heafib.github.io/post/jjlin-sanctuary-2-0-shenyang/</id>
+        <link href="https://heafib.github.io/post/jjlin-sanctuary-2-0-shenyang/">
+        </link>
+        <updated>2019-05-11T15:59:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>{% asset_img 微信图片_20200911102627.jpg 圣所2.0沈阳 %}</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>{% asset_img 微信图片_20200911102627.jpg 圣所2.0沈阳 %}</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[林俊杰2018圣所世界巡回演唱会大连站]]></title>
+        <id>https://heafib.github.io/post/jjlin-sanctuary-dalian/</id>
+        <link href="https://heafib.github.io/post/jjlin-sanctuary-dalian/">
+        </link>
+        <updated>2018-05-05T15:59:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>{% asset_img 微信图片_20200911101734.jpg 圣所大连 %}</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>{% asset_img 微信图片_20200911101734.jpg 圣所大连 %}</p>
 ]]></content>
     </entry>
 </feed>
