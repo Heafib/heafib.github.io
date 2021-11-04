@@ -1,89 +1,153 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page Not Found</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
-    }
-    .box {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .number {
-      font-size: 80px;
-      color: #666;
-      font-weight: bold;
-    }
-    .text {
-      font-size: 14px;
-      margin: 24px;
-      color: #333;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-    }
-    .btn {
-      padding: 8px 24px;
-      display: inline-block;
-      text-decoration: none;
-      background: #fff;
-      border: 2px solid #efefef;
-      color: #333;
-      margin: 24px;
-      border-radius: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
-    .footer {
-      padding: 16px;
-      border-top: 1px solid #efefef;
-      color: #777;
-      font-weight: lighter;
-    }
-    .footer a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <div class="number">4 0 4</div>
-    <div class="text">
-      Page not found
-    </div>
-    <div class="btn-container">
-      <a class="btn" id="back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 8px;">
-          <path fill="none" d="M0 0h24v24H0z"/>
-          <path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/>
-        </svg>
-        Back
-      </a>
-    </div>
+<html>
+ 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>wechat</title>
+		<!-- <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" /> -->
+	</head>
+ 
+	<body>
+    <div class="layui-body">
+      <div style="margin-left: 10%" id="container">
+          <video id="gum" autoplay muted></video>
+      <div>
+      <button id="record" disabled>开始录制</button>
+      <button id="upload" disabled>上传</button>
   </div>
-  <footer class="footer">
-    Powered by <a href="https://gridea.dev" target="_blank">Gridea</a>
-  </footer>
-  <script>
-    var back = document.getElementById('back')
-    back.onclick = function() { console.log('run...'); history.back() }
-  </script>
-</body>
-</html>
+  
+
+	</body>
+	<!--样式：-->
+	<!--js-->
+	
+	<!-- <script type="text/javascript" src="../js/immersed.js"></script>
+	<script type="text/javascript" src="../js/sockjs.min.js"></script> -->
+	<!--<script type="text/javascript" src="../js/common.js"></script>-->
+	<script>
+	var mediaSource = new MediaSource();
+mediaSource.addEventListener('sourceopen', handleSourceOpen, false);
+var mediaRecorder;
+var recordedBlobs;
+var sourceBuffer;
+
+var gumVideo = document.querySelector('video#gum');
+
+var recordButton = document.querySelector('button#record');
+var uploadButton = document.querySelector('button#upload');
+recordButton.onclick = toggleRecording;
+uploadButton.onclick = upload;
+
+// window.isSecureContext could be used for Chrome
+var isSecureOrigin = location.protocol === 'https:' || location.hostname === 'localhost';
+if (!isSecureOrigin) {
+    alert('getUserMedia() must be run from a secure origin: HTTPS or localhost.' + '\n\nChanging protocol to HTTPS');
+    location.protocol = 'HTTPS';
+}
+
+var constraints = {
+    audio: true,
+    video: {
+      width:480,//视频宽度
+      height:480,//视频高度
+      frameRate:60,//每秒60帧
+  }
+};
+
+function handleSuccess(stream) {
+    recordButton.disabled = false;
+    console.log('getUserMedia() got stream: ', stream);
+    window.stream = stream;
+    gumVideo.srcObject = stream;
+}
+
+function handleError(error) {
+    console.log('navigator.getUserMedia error: ', error);
+}
+
+navigator.mediaDevices.getUserMedia(constraints).
+    then(handleSuccess).catch(handleError);
+
+function handleSourceOpen(event) {
+    console.log('MediaSource opened');
+    sourceBuffer = mediaSource.addSourceBuffer('video/webm; codecs="vp8"');
+    console.log('Source buffer: ', sourceBuffer);
+}
+
+
+function handleDataAvailable(event) {
+    if (event.data && event.data.size > 0) {
+        recordedBlobs.push(event.data);
+    }
+}
+
+function handleStop(event) {
+    console.log('Recorder stopped: ', event);
+}
+
+function toggleRecording() {
+    if (recordButton.textContent === '开始录制') {
+        startRecording();
+    } else {
+        stopRecording();
+        recordButton.textContent = '开始录制';
+        uploadButton.disabled = false;
+    }
+}
+
+function startRecording() {
+	recordedBlobs = [];
+	var options = {mimeType: 'video/webm;codecs=h264'};
+	try {
+		mediaRecorder = new MediaRecorder(window.stream, options);
+	} catch (e) {
+	    console.error('Exception while creating MediaRecorder: ' + e);
+	    alert('Exception while creating MediaRecorder: '
+	    + e + '. mimeType: ' + options.mimeType);
+	    return;
+	}
+	console.log('Created MediaRecorder', mediaRecorder, 'with options', options);
+	recordButton.textContent = '结束录制';
+	uploadButton.disabled = true;
+	mediaRecorder.onstop = handleStop;
+	mediaRecorder.ondataavailable = handleDataAvailable;
+	mediaRecorder.start(10); // collect 10ms of data
+	console.log('MediaRecorder started', mediaRecorder);
+}
+
+function stopRecording() {
+    mediaRecorder.stop();
+    console.log('Recorded Blobs: ', recordedBlobs);
+}
+
+function upload(){
+    //保存在本地，通过post请求
+    //还可以用append方法添加一些附加信息参数为(name,value)，如下面的代码：
+    var blob = new Blob(recordedBlobs, {type: 'video/mp4'});
+    var formData = new FormData();
+    formData.append('video', blob);
+    console.log(formData);
+
+    // $.ajax({
+    //     type: "POST",
+    //     url: "/user/vertify",
+    //     data: formData,
+    //     processData:false,   //  告诉jquery不要处理发送的数据
+    //     contentType:false,    // 告诉jquery不要设置content-Type请求头
+    //     success:function(res){
+    //         console.log(res);
+    //     }
+    // });
+}
+
+	</script>
+ 
+ <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+ <script>
+   // 初始化
+   var vConsole = new VConsole();
+ </script>
