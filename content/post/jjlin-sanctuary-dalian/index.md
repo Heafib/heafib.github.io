@@ -1,7 +1,7 @@
 ---
 title: 林俊杰2018圣所世界巡回演唱会大连站
 description:
-slug: JJLin Sanctuary Dalian
+slug: jjlin-sanctuary-dalian
 date: 2018-05-05
 image: cover.jpg
 categories:

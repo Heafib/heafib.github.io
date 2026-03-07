@@ -19,7 +19,7 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "👻"
-    subtitle = ""
+    subtitle = "首先你要快乐，其次都是其次"
     avatar   = "img/avatar.png"
 
 [article]
