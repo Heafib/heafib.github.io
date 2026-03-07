@@ -3,8 +3,8 @@ base_url: /edit
 backend:
   name: github
   repo: Heafib/heafib.github.io   # 你的 GitHub 用户名/仓库名，注意大小写
-  branch: main                     # 你的仓库主分支名（可能是 main 或 master）
-  base_url: https://sveltia-cms-auth.heafib.workers.dev  # 你的认证 Worker 域名（不要加 /callback）
+  branch: master                     # 你的仓库主分支名（可能是 main 或 master）
+  base_url: https://sveltia-cms-auth.heafib.workers.dev # 你的认证 Worker 域名（不要加 /callback）
 
 # 媒体文件存放位置（建议保持与 Hugo 一致）
 media_folder: "static/uploads"
