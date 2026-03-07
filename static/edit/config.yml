@@ -1,5 +1,3 @@
-site_url: https://heafib.com
-base_url: /edit
 backend:
   name: github
   repo: Heafib/heafib.github.io   # 你的 GitHub 用户名/仓库名，注意大小写
