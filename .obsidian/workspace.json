@@ -6,6 +6,7 @@
       {
         "id": "8b373eb83fbbfd52",
         "type": "tabs",
+        "dimension": 57.740278796771825,
         "children": [
           {
             "id": "838442a6ee26777b",
@@ -15,7 +16,7 @@
               "state": {
                 "file": "content/post/jjlin-sanctuary-dalian/index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "index"
@@ -26,6 +27,7 @@
       {
         "id": "7b09dcdf4979db03",
         "type": "tabs",
+        "dimension": 42.259721203228175,
         "children": [
           {
             "id": "c28b20a57368da0f",
@@ -218,24 +220,24 @@
   },
   "active": "838442a6ee26777b",
   "lastOpenFiles": [
-    "public/p/jjlin-sanctuary-dalian/jjlin-sanctuary-dalian.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739450234.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739446659.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739441030.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739436621.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739432973.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739426492.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739422014.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739417953.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739412033.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739406561.jpg",
+    "content/post/jjlin-sanctuary-dalian/1712739399140.jpg",
+    "content/post/jjlin-sanctuary-dalian/index.md",
+    "public/p/jjlin-sanctuary-dalian/1712739450234_hu_3b123b1a638e4ed8.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739450234_hu_3b123b1a638e4ed8.jpg",
+    "public/p/jjlin-sanctuary-dalian/1712739446659_hu_72ccfc9f112c0217.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739446659_hu_72ccfc9f112c0217.jpg",
+    "public/p/jjlin-sanctuary-dalian/1712739441030_hu_dccef4fcdd33f96a.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739441030_hu_dccef4fcdd33f96a.jpg",
+    "public/p/jjlin-sanctuary-dalian/1712739436621_hu_1a88c300859a1dad.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739436621_hu_1a88c300859a1dad.jpg",
+    "public/p/jjlin-sanctuary-dalian/1712739432973_hu_99d637e04f0a29.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739432973_hu_99d637e04f0a29.jpg",
     "assets/icons",
     "assets/新建文件夹",
     "public/p/jjlin-sanctuary-dalian/index.html",
     "resources/_gen/images/p/jjlin-sanctuary-dalian",
     "public/p/jjlin-sanctuary-dalian",
     "2018-05-05.md",
-    "content/post/jjlin-sanctuary-dalian/index.md",
     "public/edit/index.html",
     "public/edit/config.yml",
     "public/edit",

@@ -13,13 +13,14 @@ tags:
   - 林俊杰
 weight: 1
 draft: "true"
-layout: single
 ---
-
-Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
-
-For more information about this theme, check the documentation: https://stack.jimmycai.com/
-
-Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
-
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+![Image 1](1712739399140.jpg)
+![Image 2](1712739406561.jpg)
+![Image 3](1712739412033.jpg)
+![Image 3](1712739417953.jpg)
+![Image 5](1712739422014.jpg)
+![Image 6](1712739432973.jpg)
+![Image 7](1712739436621.jpg)
+![Image 8](1712739441030.jpg)
+![Image 9](1712739446659.jpg)
+![Image 9](1712739450234.jpg)
