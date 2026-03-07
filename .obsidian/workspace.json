@@ -1,0 +1,246 @@
+{
+  "main": {
+    "id": "3c458fe4921a5f34",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b373eb83fbbfd52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "838442a6ee26777b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7b09dcdf4979db03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c28b20a57368da0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "97a6437a5ae46755",
+    "type": "split",
+    "children": [
+      {
+        "id": "798ffcabe780a958",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "305b715701007ccc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "b4db68f0a87cff74",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "f6c56781286e7c92",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "339cb13e55b3d5cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ad07d3196d00529",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29323ee7c1fc0ab0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "index 的反向链接列表"
+            }
+          },
+          {
+            "id": "92cf94e87d9f7451",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "index 的出链列表"
+            }
+          },
+          {
+            "id": "4fb130de4d99f4a5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3f646a6d1dfc9c0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8d7ccda172b9ce81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "index 的大纲"
+            }
+          },
+          {
+            "id": "96364b570e1b8817",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "838442a6ee26777b",
+  "lastOpenFiles": [
+    "assets/icons/brand-x.svg",
+    "assets/icons",
+    "assets/新建文件夹",
+    "assets/img/avatar.png",
+    "assets/img/favicon - 副本.png",
+    "assets/img/favicon.png",
+    "assets/img/avatar - 副本.png",
+    "assets/img/54ac9b0dfb0476e5913248339a058e8e.png",
+    "public/p/jjlin-sanctuary-dalian/cover_hu_9e6bcf9cfe9a9448.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/cover_hu_9e6bcf9cfe9a9448.jpg",
+    "public/p/jjlin-sanctuary-dalian/cover_hu_7637a25287f4bda1.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian/cover_hu_7637a25287f4bda1.jpg",
+    "public/p/jjlin-sanctuary-dalian/index.html",
+    "public/p/jjlin-sanctuary-dalian/cover_hu_f799ae28166ce51b.jpg",
+    "resources/_gen/images/p/jjlin-sanctuary-dalian",
+    "public/p/jjlin-sanctuary-dalian",
+    "2018-05-05.md",
+    "content/post/jjlin-sanctuary-dalian/index.md",
+    "public/edit/index.html",
+    "public/edit/config.yml",
+    "public/edit",
+    "public/categories/林俊杰/page/1/index.html",
+    "public/categories/林俊杰/page/1",
+    "README.md"
+  ]
+}

@@ -1,14 +1,19 @@
 ---
-title: Hello World
-description: Welcome to Hugo Theme Stack
-slug: hello-world
-date: 2022-03-06 00:00:00+0000
+title: 林俊杰2018圣所世界巡回演唱会大连站
+description:
+slug: JJLin Sanctuary Dalian
+date: 2018-05-05
 image: cover.jpg
 categories:
-    - Example Category
+  - 林俊杰
 tags:
-    - Example Tag
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+  - 大连
+  - 圣所
+  - 演唱会
+  - 林俊杰
+weight: 1
+draft: "true"
+layout: single
 ---
 
 Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
