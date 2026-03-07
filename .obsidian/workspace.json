@@ -4,40 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8b373eb83fbbfd52",
+        "id": "e1f77522569baeaf",
         "type": "tabs",
-        "dimension": 57.740278796771825,
         "children": [
           {
-            "id": "838442a6ee26777b",
+            "id": "d179ff5d97ad2ac6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "file": "content/post/jjlin-jj20-xianyang/index.md",
                 "mode": "source",
                 "source": true
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          }
-        ]
-      },
-      {
-        "id": "7b09dcdf4979db03",
-        "type": "tabs",
-        "dimension": 42.259721203228175,
-        "children": [
-          {
-            "id": "c28b20a57368da0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/jjlin-sanctuary-dalian/index.md",
-                "mode": "preview",
-                "source": false
               },
               "icon": "lucide-file",
               "title": "index"
@@ -100,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "339cb13e55b3d5cc",
@@ -117,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "file": "content/post/jjlin-jj20-xianyang/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "file": "content/post/jjlin-jj20-xianyang/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -179,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/jjlin-sanctuary-dalian/index.md",
+                "file": "content/post/jjlin-jj20-xianyang/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 858.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,31 +194,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "838442a6ee26777b",
+  "active": "d179ff5d97ad2ac6",
   "lastOpenFiles": [
-    "content/post/jjlin-sanctuary-dalian/1712739399140.jpg",
+    "content/post/jjlin-sanctuary-2-0-hefei/index.md",
+    "content/post/jjlin-sanctuary-2-0-shenyang/index.md",
     "content/post/jjlin-sanctuary-dalian/index.md",
-    "public/p/jjlin-sanctuary-dalian/1712739450234_hu_3b123b1a638e4ed8.jpg",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739450234_hu_3b123b1a638e4ed8.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739446659_hu_72ccfc9f112c0217.jpg",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739446659_hu_72ccfc9f112c0217.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739441030_hu_dccef4fcdd33f96a.jpg",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739441030_hu_dccef4fcdd33f96a.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739436621_hu_1a88c300859a1dad.jpg",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739436621_hu_1a88c300859a1dad.jpg",
-    "public/p/jjlin-sanctuary-dalian/1712739432973_hu_99d637e04f0a29.jpg",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian/1712739432973_hu_99d637e04f0a29.jpg",
-    "assets/icons",
-    "assets/新建文件夹",
-    "public/p/jjlin-sanctuary-dalian/index.html",
-    "resources/_gen/images/p/jjlin-sanctuary-dalian",
-    "public/p/jjlin-sanctuary-dalian",
+    "content/_index.md",
+    "content/post/shortcodes/index.md",
+    "content/post/math-typesetting/index.md",
+    "content/post/markdown-syntax/index.md",
+    "content/post/image-gallery/index.md",
+    "content/post/jjlin-jj20-xianyang/index.md",
+    "public/p/jjlin-jj20-xianyang/cover_hu_2a366d9b967ac970.png",
+    "resources/_gen/images/p/jjlin-jj20-xianyang/cover_hu_2a366d9b967ac970.png",
+    "public/p/jjlin-jj20-xianyang/cover_hu_7c7d11a01a06bd10.png",
+    "public/p/jjlin-jj20-xianyang/cover_hu_9eea472c0230fce5.png",
+    "public/p/jjlin-jj20-xianyang/cover_hu_eb284b5defd77c6d.png",
+    "resources/_gen/images/p/jjlin-jj20-xianyang/cover_hu_9eea472c0230fce5.png",
+    "public/p/jjlin-jj20-xianyang/cover_hu_b5269b02529690d6.png",
+    "resources/_gen/images/p/jjlin-jj20-xianyang/cover_hu_7c7d11a01a06bd10.png",
+    "public/p/jjlin-jj20-xianyang/cover_hu_1e061096249a5438.png",
+    "resources/_gen/images/p/jjlin-jj20-xianyang/cover_hu_eb284b5defd77c6d.png",
+    "resources/_gen/images/p/jjlin-jj20-xianyang",
+    "public/tags/咸阳/index.xml",
+    "public/tags/咸阳/page/1/index.html",
+    "public/tags/咸阳/page/1",
+    "public/tags/咸阳/page",
+    "public/tags/咸阳/index.html",
+    "public/tags/咸阳",
+    "public/tags/jj20/page/1/index.html",
+    "public/tags/jj20/page/1",
+    "public/tags/jj20/page",
+    "2019-05-11.md",
+    "content/post/jjlin-sanctuary-2-0-shenyang - 副本/index.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "content/post/jjlin-sanctuary-dalian - 副本/index.md",
     "2018-05-05.md",
-    "public/edit/index.html",
-    "public/edit/config.yml",
-    "public/edit",
-    "public/categories/林俊杰/page/1/index.html",
-    "public/categories/林俊杰/page/1",
     "README.md"
   ]
 }
