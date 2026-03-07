@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Heafib/heafib.github.io # 例如: yourname/my-blog
+  branch: main
+  # base_url 先留空，等部署好 Cloudflare Worker 再填
+
+# 媒体文件配置，建议保持与 Hugo 一致
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog" # 集合名称
+    label: "博客文章" # 后台显示的标签
+    folder: "content/post" # 你的文章存放目录 (根据你的 Hugo 配置修改)
+    create: true # 允许新建文章
+    slug: "{{slug}}" # 文章文件名格式
+    fields: # 文章包含的字段
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
